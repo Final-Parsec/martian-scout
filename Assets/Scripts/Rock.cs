@@ -18,6 +18,8 @@ public class Rock : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private float Speed = 1f;
     private AudioSource audioSource;
+    private int Health = 1;
+    private int Damage = 1;
 
     private PlayerMovement playerMovement;
     private PlayerMovement PlayerMovement

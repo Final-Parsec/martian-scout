@@ -9,6 +9,7 @@ public class Projectile : MonoBehaviour
     private new Collider2D collider;
     private new Rigidbody2D rigidbody;
     private Vector2 origin;
+    private int Damage;
     private float Force
     {
         get
