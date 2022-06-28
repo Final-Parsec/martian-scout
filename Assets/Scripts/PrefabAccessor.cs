@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System.Dynamic;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class PrefabAccessor : MonoBehaviour
     public static Dictionary<TagsAndEnums.RockType, List<Rock>> rockPool = new Dictionary<TagsAndEnums.RockType, List<Rock>>();
     public static PrefabAccessor prefabAccessor;
 
+    public GameObject WinText;
+    public GameObject LoseText;
     void Start()
     {
         prefabAccessor = this;
@@ -62,4 +65,16 @@ public class PrefabAccessor : MonoBehaviour
         rock.enabled = true;
         return rock;
     }
+
+    public static GameObject GetWinText()
+    {
+        return prefabAccessor.WinText;
+    }
+
+        public static GameObject GetLoseText()
+    {
+        return prefabAccessor.LoseText;
+    }
+
+
 }

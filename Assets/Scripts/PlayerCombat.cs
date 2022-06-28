@@ -19,6 +19,7 @@ public class PlayerCombat : MonoBehaviour
     private float lastShootTime = 0;
     private float respawnTimer = 0;
     private float respawnWaitTime = 0;
+    private int lives = 3;
     private float shootSpeed
     {
         get
@@ -44,6 +45,8 @@ public class PlayerCombat : MonoBehaviour
         this.IsDead = true;
         this.respawnTimer = 0;
         this.respawnWaitTime = respawn ? 3 : float.MaxValue;
+        this.lives--;
+        if(lives < 0) LevelOneManager.Instance.ChangeState(TagsAndEnums.GameState.Lose);
     }
 
     private void Start()

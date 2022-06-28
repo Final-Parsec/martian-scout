@@ -25,4 +25,14 @@ public class TagsAndEnums : MonoBehaviour
         RegularRock=0,
         Fragment=1
     }
+
+    //Level Game States
+    public enum GameState {
+        Start = 0, //no enemies for a moment you get your bearings
+        Tier1 = 1, //these increasing tiers will represent more rox
+        Tier2 = 2,
+        Tier3 = 3,
+        Win = 4,
+        Lose = 5
+    }
 }

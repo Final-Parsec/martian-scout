@@ -14,6 +14,7 @@ public class HUD : MonoBehaviour
     private List<GameObject> lifeDisplay = new List<GameObject>();
     private int lifePadding = 5;
     private Vector2 lifeStartPosition = new Vector2(15, -60);
+    public GameObject winText;
     
     private float boostBarMaxWidth;
 

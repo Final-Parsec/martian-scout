@@ -30,6 +30,10 @@ public class EnvironmentManager : MonoBehaviour
         }
     }
 
+    public void EnableWinText() => PrefabAccessor.GetWinText().SetActive(true);
+    public void DisableWinText() => PrefabAccessor.GetWinText().SetActive(false);
+    public void EnableLoseText() => PrefabAccessor.GetLoseText().SetActive(true);
+    public void DisableLoseText() => PrefabAccessor.GetLoseText().SetActive(false);
     public void SetRocks(int rockNum) => rockCount += rockNum;
 
     public void AddFragments(List<Rock> fragments)
